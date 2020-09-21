@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linesatu"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:id="@+id/text_register"/>
+
+
+    </LinearLayout>
+
+    <!--    <view-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:background="@android:color/black"-->
+    <!--        android:layout_below="@+id/linesatu"/>-->
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:src="@drawable/instagram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:id="@+id/logo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:id="@+id/edt_fullName_register"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:hint="Full Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:id="@+id/edt_username_register"
+        android:layout_below="@+id/edt_fullName_register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:hint="username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:padding="10dp"
+        android:id="@+id/edt_email_register"
+        android:layout_below="@+id/edt_username_register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:inputType="textEmailAddress"
+        android:hint="gmail"/>
+
+    <EditText
+        android:id="@+id/edt_password_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs_background"
+        android:layout_below="@+id/edt_email_register"
+        android:hint="password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_register"
+        android:layout_below="@+id/edt_password_register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/button_bg"
+        android:textSize="16dp"/>
+
+    <!--    <view-->
+    <!--        android:id="@+id/line3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@android:drawable/screen_background_dark_transparent"-->
+    <!--        android:layout_above="@+id/linear_akhir"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linear_akhir">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tanya_akun_register"
+            android:textSize="12sp"
+            android:text="udah ada akun"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_loginakun"
+            android:textSize="12sp"
+            android:text="masuk"
+            android:layout_marginLeft="6dp"
+            android:textColor="@android:color/holo_blue_bright"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

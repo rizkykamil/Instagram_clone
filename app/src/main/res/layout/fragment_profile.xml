@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_username"
+                    android:textSize="20sp"
+                    android:text="username"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/black"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/options"
+                    android:id="@+id/option_view"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_margin="12dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/user_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/total_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="900B"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/total_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="25sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp">
+
+        <TextView
+            android:id="@+id/Fullname_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:text="Rizky_kamil.14"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Username_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="Rizky kamil" />
+        <TextView
+            android:id="@+id/Bio_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="ANAK ALIM ALIM"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Edit Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <ImageButton
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_grid_view_button"
+                android:src="@drawable/grid"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <ImageButton
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_save_post_button"
+                android:src="@drawable/ic_baseline_assignment_ind_24"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_upload"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
