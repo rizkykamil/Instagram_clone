@@ -28,7 +28,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun createAkun() {
-
+        //untuk memberikan aksi ketika text dimasukan kedalam edit dan datanya di jadikan ditampung didalam string
         val fullname = edt_fullName_register.text.toString()
         val username = edt_username_register.text.toString()
         val email = edt_email_register.text.toString()
@@ -91,6 +91,7 @@ class RegisterActivity : AppCompatActivity() {
         userMap["fullbneme"] = fullname.toLowerCase()
         userMap["username"] = username.toLowerCase()
         userMap["email"] = email
+                //default bio dan photo profile
         userMap["bio"] = "HAY IM GO                     `OD"
         userMap["image"] = "https://firebasestorage.googleapis.com/v0/b/instagram-f5f6f.appspot.com/o/defultImage%2FJepretan%20Layar%202020-08-23%20pukul%2019.11.28.png?alt=media&token=5ca28d69-4f32-4ea2-9ad6-85553ca2d1b1"
         usersRef.child(currentUserID).setValue(userMap)
