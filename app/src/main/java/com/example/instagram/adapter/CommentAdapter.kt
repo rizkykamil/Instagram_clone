@@ -19,7 +19,8 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class CommentAdapter (private val mContent : Context,private val mcomment: MutableList<Comment>):
     RecyclerView.Adapter<CommentsViewHolder>() {
-
+        
+    //inisialisasi id comment layout
     private var firebaseUser: FirebaseUser? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommentsViewHolder {
         val view = LayoutInflater.from(mContent).inflate(R.layout.list_comment_layout,parent,false)
@@ -36,7 +37,7 @@ class CommentAdapter (private val mContent : Context,private val mcomment: Mutab
         val comment = mcomment[position]
 
         holder.comment_nan.text = comment.getCommnet()
-
+        //create method untuk mengambil database
         getUserInfo(holder.ImageProfileComment,holder.userNameComment,comment.getPublisher())
 
 
