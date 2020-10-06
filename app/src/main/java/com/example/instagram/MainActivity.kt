@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //untuk membuild bottom navigationnya
 
         bottomNavigation.setOnNavigationItemSelectedListener(onBottomNavigationListener)
 
@@ -20,8 +21,11 @@ class MainActivity : AppCompatActivity() {
 //        frag.add(R.id.itemhome, HomeFragment())
 //        frag.commit()
     }
+            //supaya home menjadi default ketika aplikasi pertama kali di jalan kan
+
 
     private val onBottomNavigationListener =
+        //function untuk pindah antar fragment
         BottomNavigationView.OnNavigationItemSelectedListener { a ->
 
             var selectedFragment: Fragment = HomeFragment()
