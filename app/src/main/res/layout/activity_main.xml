@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+//ini frame layout
     <FrameLayout
         android:id="@+id/framelayout"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
 
     </FrameLayout>
 
-
+//ini bottom navigation
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
@@ -31,5 +31,8 @@
 
 
 
-
+//2312321312312
+    //tesetsetsestest
+    //bljrbljrbljrbljr
+    //uwuwuwuwuwuwuwuwu
 </androidx.constraintlayout.widget.ConstraintLayout>
